@@ -11,7 +11,7 @@ from tensorflow.keras.models import Sequential
 
 from tensorflow_hub.keras_layer import KerasLayer
 
-
+import os
 from PIL import Image
 import pickle
 #import sklearn
@@ -106,7 +106,8 @@ predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 
 if predict_btn :
     Path_class = "classe_name.txt"
-    model = load_model(r"/Libellé.h5")
+    mod = "Libellé.h5"
+    model = load_model(mod)
     model.summary()
     #image= [np.array(Image.open(path)
     #print(loaded_image.shape)
