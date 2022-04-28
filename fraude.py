@@ -10,7 +10,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 
 from tensorflow_hub.keras_layer import KerasLayer
-#import pathlib
+import pathlib
 #import os
 from PIL import Image
 import pickle
