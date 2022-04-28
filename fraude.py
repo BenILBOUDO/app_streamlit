@@ -7,7 +7,8 @@ import tensorflow_hub as hub
 
 from tensorflow import keras
 from tensorflow.keras import layers
-from tensorflow.keras.models import Sequential
+from tensorflow.keras.models import Sequential, load_model
+
 from tensorflow_hub.keras_layer import KerasLayer
 
 
@@ -104,8 +105,8 @@ if uploaded_file:
 predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 
 if predict_btn :
-    Path_class = "../app_streamlit/classe_name.txt"
-    model = load_model("../app_streamlit/Libellé.h5")
+    Path_class = "classe_name.txt"
+    model = load_model("Libellé.h5")
     model.summary()
     #image= [np.array(Image.open(path)
     #print(loaded_image.shape)
