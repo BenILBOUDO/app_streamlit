@@ -107,6 +107,7 @@ predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 if predict_btn :
     Path_class = pathlib.Path("classe_name.txt")
     mod = pathlib.Path("Libellé.h5")
+    print(mod)
     model = load_model(mod)
     model.summary()
     #image= [np.array(Image.open(path)
