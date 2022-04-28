@@ -13,9 +13,9 @@ from tensorflow_hub.keras_layer import KerasLayer
 
 from PIL import Image
 import pickle
-import sklearn
+#import sklearn
 
-import yaml
+#import yaml
 
 
 
