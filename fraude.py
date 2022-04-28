@@ -9,12 +9,12 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 from tensorflow_hub.keras_layer import KerasLayer
-import plotly.graph_objects as px
+
 
 from PIL import Image
 import pickle
 import sklearn
-from sklearn.svm import SVC
+
 import yaml
 
 
