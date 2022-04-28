@@ -43,7 +43,7 @@ def load_image(path):
 
     
 
-
+@st.cache(ttl = 12*3600, allow_output_mutation=True, max_entries=5)
 def predict_image(Path_class,path, model):
     """Predict plane identification from image.
     
@@ -105,7 +105,7 @@ predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 
 if predict_btn :
     Path_class = "classe_name.txt"
-    model = load_model("Libellé.h5")
+    model = load_model("Libelle.h5")
     model.summary()
     #image= [np.array(Image.open(path)
     #print(loaded_image.shape)
