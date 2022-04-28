@@ -105,8 +105,8 @@ if uploaded_file:
 predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 
 if predict_btn :
-    Path_class = "/classe_name.txt"
-    model = load_model("/Libellé.h5")
+    Path_class = "classe_name.txt"
+    model = load_model(f'Libellé.h5')
     model.summary()
     #image= [np.array(Image.open(path)
     #print(loaded_image.shape)
