@@ -10,8 +10,8 @@ from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 
 from tensorflow_hub.keras_layer import KerasLayer
-import pathlib
-import os
+#import pathlib
+#import os
 from PIL import Image
 import pickle
 #import sklearn
@@ -105,8 +105,8 @@ if uploaded_file:
 predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 
 if predict_btn :
-    Path_class = pathlib.Path("classe_name.txt")
-    mod = pathlib.Path("Libellé.h5")
+    Path_class = 'classe_name.txt'
+    mod = 'Libellé.h5'
     print(mod)
     model = load_model(mod)
     model.summary()
