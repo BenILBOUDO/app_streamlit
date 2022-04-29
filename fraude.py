@@ -108,8 +108,8 @@ if predict_btn :
     Path_class = "classe_name.txt"
     #mod = (Libellé.h5)
     #print(mod)
-    model = tf.saved_model.load("Libellé.h5")
-    #model = load_model("Libellé.h5")
+    #model = tf.saved_model.load("Libellé.h5")
+    model = load_model("Libellé.h5")
     model.summary()
     #image= [np.array(Image.open(path)
     #print(loaded_image.shape)
