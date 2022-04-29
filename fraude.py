@@ -106,7 +106,7 @@ predict_btn = st.button("Identify", disabled=(uploaded_file is None))
 
 if predict_btn :
     Path_class = "classe_name.txt"
-    mod = '/Libellé.h5'
+    mod = 'Libellé.h5'
     #print(mod)
     #model = tf.saved_model.load("/Libellé.h5")
     model = load_model(mod)
